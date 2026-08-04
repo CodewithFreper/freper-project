@@ -1,0 +1,27 @@
+{
+  "name": "freper-project",
+  "version": "1.0.0",
+  "description": "Proyecto de portfolio perosnal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src/ index.html 1234 --reload",
+    "lint": "oxlint src/",
+    "format": "oxfmt src/"
+  },
+  "keywords": [],
+  "author": "Cristina Fresneda (Freper)",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.18.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "oxfmt": "^0.62.0",
+    "oxlint": "^1.77.0",
+    "servor": "4.0.2"
+  }
+}
