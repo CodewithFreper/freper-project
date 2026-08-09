@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Fira Sans;
+    background-color: #333;
+    color: #fff;
+}
+
+h1 {
+    font-family: Bebas Neue;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin: 0; 
+    display: flex;
+    justify-content: center; /*Centra a los hijos, no el contenedor navbar*/
+    align-items: center; /*Alinea en vertical, para que todos esten a la misma altura*/
+    width: fit-content;
+    margin-inline: auto;
+    background-color: #001943;
+    border-radius: 40px;
+    padding: 0.2rem 3rem;
+}
+
+.navbar>*{
+    padding: 0 0.5em;
+    color: #29ABE2
+}
+ 
+.navbar>*:hover{
+    color: #0071BC;
+}
+
+.navbar>*:focus{
+    color: #E9CA51;
+}
+
+
+
+.hero {
+    width: 100%;
+    line-height: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+main {
+    padding: 1rem;
+}
+
+
+
+
+
