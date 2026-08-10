@@ -10,8 +10,9 @@ body {
     color: #fff;
 }
 
-h1 {
+h1, h2 {
     font-family: Bebas Neue;
+    letter-spacing: 10%;
 }
 
 header {
@@ -66,6 +67,31 @@ main {
     padding: 1rem;
 }
 
+section > h2 {
+    padding: 1rem;
+}
+
+.container {
+    display:flex;
+    justify-content: space-around;
+}
+.card {
+    background-color: #666666;
+    max-width: 33%;
+    min-width: fit-content;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: -5px 0px 0px 0px #29ABE2;
+}
+
+#home {
+    padding: 1rem; 
+}
+
+#home > img {
+    max-width: 30%;
+    border-radius: 100%;
+}
 
 
 
