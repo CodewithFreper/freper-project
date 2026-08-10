@@ -10,11 +10,14 @@ body {
     color: #fff;
 }
 
-h1, h2 {
+h1, h2, h3{
     font-family: Bebas Neue;
     letter-spacing: 10%;
 }
 
+h3 {
+    padding-bottom: 0.5rem;
+}
 header {
     position: relative;
 }
@@ -77,7 +80,7 @@ section > h2 {
 }
 .card {
     background-color: #666666;
-    max-width: 33%;
+    width: 25%;
     min-width: fit-content;
     border-radius: 10px;
     padding: 2rem;
