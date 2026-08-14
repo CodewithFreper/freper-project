@@ -280,5 +280,17 @@ h2:hover span:nth-child(4){
 }
 
 
+/***** MOBILE *****/
+@media (max-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 5%;
+    }
+}
 
 
