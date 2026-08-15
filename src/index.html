@@ -16,9 +16,14 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#aboutme">
+            <a href="#home">
                 <span class="material-symbols-outlined">
                 home
+                </span>
+            </a>
+            <a href="#aboutme">
+                <span class="material-symbols-outlined">
+                person
                 </span>
             </a>
             <a href="#education">
@@ -40,20 +45,20 @@
         <section class="hero">
             <div class="content">
                 <div class="title">
-                    <p>Multilingual. Multiskilled.</p>
-                    <p>Ready for the tech world.</p>
+                    <h1>Multilingual. Multiskilled.</h1>
+                    <h1>Ready for the tech world.</h1>
                 </div>
                 <div class ="button">
-                    <a href="mailto:codewithfreper@gmai.com">codewithfreper@gmail.com</a>
+                    <a href="mailto:codewithfreper@gmail.com">codewithfreper@gmail.com</a>
                 </div>
             </div>
-            <div class="logo">
-                <img src="./img/LogoNoBg.png" id="logo" alt="Logo with open and closing tags and a text at the bottom that reads: cristinafresneda, programming an alternative future.">
+            <div>
+                <img src="./img/LogoNoBg.png" class="logo" alt="Logo with open and closing tags and a text at the bottom that reads: cristinafresneda, programming an alternative future.">
             </div>
         </section>
     </header>
     <main>
-        <section id="home">
+        <section class="home" id="home">
             <img src="./img/cris-pro.png" id="selfie" alt="Comic style selfie of Cristina, with the logo as background">
             <div>
                 <h1>
@@ -85,8 +90,18 @@
                 </div>
                 <div class="card">
                     <h3>Contact</h3>
-                    <p>Email: <a href="mailto:codewithfreper@gmail.com" aria-label="Send email to codewithfreper@gmail.com">codewithfreper@gmail.com</a></p>
-                    <p>Telephone: <a href="tel:+34645217324" aria-label="Phone to +34645217324">+34 645 217 324</a></p>
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">
+                        alternate_email
+                        </span>
+                        <a href="mailto:codewithfreper@gmail.com" aria-label="Send email to codewithfreper@gmail.com">codewithfreper@gmail.com</a>
+                     </div>
+                    <div class="p-1">
+                        <span class="material-symbols-outlined">
+                        call
+                        </span>
+                        <a href="tel:+34645217324" aria-label="Phone to +34645217324">+34 645 217 324</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,6 +178,9 @@
             </div>
         </section> 
     </main>
+    <footer>
+        <small>Created by Cristina Fresneda</small>
+    </footer>
 </body>
 
 </html>

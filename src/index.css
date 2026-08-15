@@ -5,18 +5,30 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+:root {
+    --color-primary: #0071BC;
+    --color-secondary: #29ABE2;
+    --color-accent: #E9CA51;
+
+    --color-text: #fff;
+    --color-background: #333;
+
+    --font-text: Fira Sans;
+    --font-headings: Bebas Neue;
+}
 a {
-    color: #333;
+    color: var(--color-background);
 }
 body {
-    font-family: Fira Sans;
-    background-color: #333;
-    color: #fff;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-family: var(--font-text);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: clamp(1rem, 16px, 2rem);
 }
 
 h1, h2, h3{
-    font-family: Bebas Neue;
+    font-family: var(--font-headings);
     letter-spacing: 5%;
 }
 
@@ -49,16 +61,16 @@ header {
 
 .navbar>*{
     padding: 0 1vw;
-    color: #0071BC;
+    color: var(--color-primary);
 }
  
 .navbar>*:hover{
-    color: #29ABE2;
-    text-shadow: 0 0 3px #29ABE2;
+    color: var(--color-secondary);
+    text-shadow: 0 0 3px var(--color-secondary);
 }
 
 .navbar>*:focus{
-    color: #E9CA51;
+    color: var(--color-accent);
 }
 
 .hero {
@@ -73,19 +85,19 @@ header {
     padding: 0 4vw;  
 }
 
-.hero .title{
+.title{
     font-size: clamp(3rem, 5vw, 5rem);
-    font-family: Bebas Neue;
+    font-family: var(--font-headings);
     letter-spacing: 2px;
 }
 
-.hero .button {
+.button {
     font-size: clamp(1rem, 1.5vw, 2rem);
-    font-family: Fira Sans;
+    font-family: var(--font-text);
     width: fit-content;
     background-color: #29aae26c;
     box-shadow: #29ABE2;
-    padding: 2%;
+    padding: 1%;
     margin-top: 5%;
     border-radius: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -95,7 +107,7 @@ header {
     box-shadow: 0 4px 8px 0 #7bd2f8, 0 6px 20px 0 #7bd2f8;
 }
 
-#logo {
+.logo {
     height: clamp(100px, 20vw, 300px);
 }
 
@@ -123,14 +135,21 @@ section > h2 {
 }
 
 .card a:hover {
-    text-shadow: 0 0 3px #E9CA51;
+    text-decoration: underline;
+
+}
+
+.p-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 ul {
     padding: 2rem;
 }
 
-#home {
+.home {
     padding: 1rem; 
     display: flex;
 }
@@ -142,12 +161,11 @@ ul {
     display: block;
     padding-bottom: 2rem;
 }
-
-#home > div {
+.home > div {
     padding-left: 2vw;
 }
 
-#home > div > p {
+.home > div > p {
     padding: 2vw;
 }
 
