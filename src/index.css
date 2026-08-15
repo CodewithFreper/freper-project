@@ -92,7 +92,7 @@ header {
 }
 
 .button:hover {
-    box-shadow: 0 4px 8px 0 #E9CA51, 0 6px 20px 0 #E9CA51;
+    box-shadow: 0 4px 8px 0 #7bd2f8, 0 6px 20px 0 #7bd2f8;
 }
 
 #logo {
@@ -101,6 +101,9 @@ header {
 
 main {
     padding: 1rem;
+    width: 100%; 
+    max-width: 1024px;
+    margin: auto;
 }
 
 section > h2 {
@@ -132,10 +135,9 @@ ul {
     display: flex;
 }
 
-#home > img {
-    width: 30vw;
+#selfie {
+    width: 400px;
     height: auto;
-    object-fit: cover;
     border-radius: 200px 75px 200px 75px;
     display: block;
     padding-bottom: 2rem;
