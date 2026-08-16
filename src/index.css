@@ -145,9 +145,13 @@ section > h2 {
     gap: 2%;
 }
 
+.cardHeader a {
+    color: var(--color-text);
+}
+
 .imgCard {
-   width:30%;
-   height:30%;
+   width: 75px;
+   height: auto;
    background-color: white;
    padding: 2%;
    border-radius: 50px;
