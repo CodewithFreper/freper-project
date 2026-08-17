@@ -86,15 +86,18 @@ header {
     font-family: var(--font-headings);
 }
 
+.buttons {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
 .button {
     font-size: clamp(1rem, 16px, 2rem);
     font-family: var(--font-text);
     width: fit-content;
-    background-color: #29aae26c;
+    background-color: #e1edf16c;
     box-shadow: #29ABE2;
     padding: 1% 5%;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    margin-top: 0.5rem;
     border-radius: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 #7bd2f8 inset;
 }
@@ -157,6 +160,45 @@ section > h2 {
    border-radius: 50px;
 }
 
+.bigCard {
+    background-color: #666666;
+    padding: 1rem;
+    width: 100%; 
+    max-width: 1024px;
+    margin: 3% auto;
+    border-radius: 10px;
+    box-shadow: -5px 0px 0px 0px #29ABE2, 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bigCardTitle {
+    font-size: 5rem;
+}
+
+.bigCard h4 {
+    font-size: 2rem;
+    font-family: var(--font-headings);
+}
+
+.imgBigCard {
+   width: 200px;
+   height: auto;
+   background-color: white;
+   padding: 2%;
+   border-radius: 100px;
+}
+
+.backButton {
+    border-radius: 100%;
+    background-color: #666666;
+    width: fit-content;
+    padding: 10px;
+    margin: 2%;
+    float: right;
+}
+
+.backButton a {
+    color: var(--color-text);
+}
 .p-1 {
     display: flex;
     align-items: center;
