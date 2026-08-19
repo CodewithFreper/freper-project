@@ -6,16 +6,28 @@
     text-decoration: none;
 }
 
+/*Fuente 1 - Headers*/
+@font-face {
+    font-family: 'HelveticaNowDisplay';
+    src: url('./fonts/HelveticaNowDisplay-ExtraBold.ttf') format('truetype');
+    font-display: swap; /*Para que si tarda en descargarse la fuente se vea el texto con otra fuente hasta que se descargue*/
+}
+
+/*Fuente 2 - Texto*/
+@font-face {
+    font-family: 'FiraCode';
+    src: url('./fonts/FiraCode-Regular.ttf') format('truetype');
+}
+
 :root {
     --color-primary: #0071BC;
     --color-secondary: #29ABE2;
     --color-accent: #E9CA51;
-
     --color-text: #fff;
     --color-background: #333;
 
-    --font-text: Fira Sans;
-    --font-headings: Bebas Neue;
+    --font-text: 'FiraCode', Arial;
+    --font-header: 'HelveticaNowDisplay', Arial;
 }
 a {
     color: var(--color-background);
@@ -28,8 +40,8 @@ body {
 }
 
 h1, h2, h3{
-    font-family: var(--font-headings);
-    letter-spacing: 2%;
+    font-family: var(--font-header );
+    letter-spacing: -5%;
 }
 
 /***** Estilos header *****/
@@ -54,19 +66,18 @@ header {
     border-radius: 40px;
     padding: 0.2% 2% 0 2%;
     gap: 20px;
-}
 
-.navbar>*{
-    color: var(--color-primary);
-}
- 
-.navbar>*:hover{
-    color: var(--color-secondary);
-    text-shadow: 0 0 3px var(--color-secondary);
-}
+    & * {
+        color: var(--color-primary);
+    }
 
-.navbar>*:focus{
-    color: var(--color-accent);
+    & *:hover {
+        color: var(--color-secondary);
+        text-shadow: 0 0 3px var(--color-secondary);
+    }
+     & *:focus {
+        color: var(--color-accent);
+     }
 }
 
 .hero {
@@ -83,7 +94,7 @@ header {
 
 .title{
     font-size: clamp(3rem, 30px, 5rem);
-    font-family: var(--font-headings);
+    font-family: var(--font-header);
 }
 
 .buttons {
@@ -128,6 +139,7 @@ section > h2 {
 }
 .card {
     background-color: #666666;
+    border:solid 0.5px #7bd2f8;
     width: clamp(20vw, 30%, 33vw);
     border-radius: 10px;
     padding: 1rem;
@@ -176,7 +188,7 @@ section > h2 {
 
 .bigCard h4 {
     font-size: 2rem;
-    font-family: var(--font-headings);
+    font-family: var(--font-header);
 }
 
 .imgBigCard {
