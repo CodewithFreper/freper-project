@@ -241,10 +241,6 @@ ul {
     padding-left: 2vw;
 }
 
-.home > div > p {
-    padding: 2vw;
-}
-
 section{
     padding-bottom: 3rem;
 
@@ -402,17 +398,16 @@ h2:hover span:nth-child(4){
         
     }
 
-    .title{
-        h1{
-            font-size: 2rem;
-        }
+    h1{
+        font-size: 2rem;
     }
+
 
     .buttons {
         display: flex;
         justify-content: space-around;
         width: 20%;
-        margin-top: 5%;
+        margin-bottom: 5%;
 
     }
     .button {
@@ -424,9 +419,9 @@ h2:hover span:nth-child(4){
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 #7bd2f8 inset;
 
         .bi {
-            width: 1rem;
-            height: 1rem;
-            padding: 25%;
+            width: 2rem;
+            height: 2rem;
+            padding-top: 0.5rem;
             color: var(--color-text);
         }
     }
@@ -435,6 +430,25 @@ h2:hover span:nth-child(4){
         display: none;
     }
 
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #selfie {
+            height: 200px;
+            width: auto;
+            border-radius: 100px 50px 100px 50px;
+        }
+
+        
+    }
+
+    h2 {
+        span {
+            display: none;
+        }
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -444,6 +458,44 @@ h2:hover span:nth-child(4){
         width: 90%;
         margin: 5%;
         font-size: 0.9rem;
+    }
+
+    .bigCard {
+        width: 90%;
+        margin: 5%;
+        font-size: 0.9rem;
+
+        .cardHeader {
+            width: 90%;
+            margin: auto;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            width: 75%;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100px;
+            margin-right: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }   
+
+        p li{
+            font-size: 0.8rem;
+        }
+
+        ul {
+            padding: 0.5rem;
+            
+            ul{
+                padding: 1rem;
+            }
+        }
     }
 }
 
